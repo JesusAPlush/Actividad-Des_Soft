@@ -1,0 +1,49 @@
+@startuml
+
+Class Cliente {
++id 
+nombre
+direccion
+telefono
+persona de contacto
+tipo de act 'moda / publ y cine' 
+}
+
+Class Agente_Casting {
++id 
+nombre
+direccion
+telefono
+}
+
+Class Candidatos {
++id 
+nombre
+direccion
+telefono
+fecha de nacimiento
+fotografia
+provinicia
+sexo
+altura
+color de pelo
+color de ojos
+especialidad de moda o publicidad y cine
+experiencia
+}
+
+Class Casting {
++id 
+nombre
+descripcion
+fecha de contratacion
+-id_cliente
+-id_agente_Casting
+-id_candidatos
+}
+
+Cliente "1" --  "1" Casting
+Agente_Casting "1" -- "1" Casting
+Candidatos "1" -- "1" Casting
+
+@enduml
