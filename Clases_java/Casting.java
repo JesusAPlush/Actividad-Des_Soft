@@ -8,6 +8,17 @@ public class Casting {
     private AgenteCasting agenteCasting;
     private Candidato candidato;
 
+    public Casting(int id, String nombre, String descripcion, String fechaDeContratacion,
+               Cliente cliente, AgenteCasting agenteCasting, Candidato candidato) {
+    this.id = id;
+    this.nombre = nombre;
+    this.descripcion = descripcion;
+    this.fechaDeContratacion = fechaDeContratacion;
+    this.cliente = cliente;
+    this.agenteCasting = agenteCasting;
+    this.candidato = candidato;
+    }
+    
     public int getId() {
         return id;
     }
