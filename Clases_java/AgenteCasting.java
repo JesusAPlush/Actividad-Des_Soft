@@ -4,6 +4,13 @@ public class AgenteCasting {
     private String direccion;
     private String telefono;
 
+    public AgenteCasting(id int, nombre String, direccion String, telefono String) {
+    this.id = id;
+    this.nombre = nombre;
+    this.direccion = direccion;
+    this.telefono = telefono;
+    }
+
     public int getId() {
         return id;
     }
