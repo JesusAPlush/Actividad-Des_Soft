@@ -13,6 +13,23 @@ public class Candidato {
     private String especialidad;
     private String experiencia;
 
+    public Candidato(int id, String nombre, String direccion, String telefono, String fechaDeNacimiento, String fotografia, String provincia, String sexo, double altura, 
+    String colorDePelo, String colorDeOjos, String especialidad, String experiencia) {
+    this.id = id;
+    this.nombre = nombre;
+    this.direccion = direccion;
+    this.telefono = telefono;
+    this.fechaDeNacimiento = fechaDeNacimiento;
+    this.fotografia = fotografia;
+    this.provincia = provincia;
+    this.sexo = sexo;
+    this.altura = altura;
+    this.colorDePelo = colorDePelo;
+    this.colorDeOjos = colorDeOjos;
+    this.especialidad = especialidad;
+    this.experiencia = experiencia;
+    }
+    
     public int getId() {
         return id;
     }
