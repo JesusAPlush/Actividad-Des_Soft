@@ -6,6 +6,15 @@ public class Cliente {
     private String personaDeContacto;
     private String tipoDeActividad; // "moda / publ y cine"
 
+public Cliente(int id, String nombre, String direccion, String telefono, String personaDeContacto, String tipoDeActividad) {
+    this.id = id;
+    this.nombre = nombre;
+    this.direccion = direccion;
+    this.telefono = telefono;
+    this.personaDeContacto = personaDeContacto;
+    this.tipoDeActividad = tipoDeActividad;
+    }
+    
     public int getId() {
         return id;
     }
